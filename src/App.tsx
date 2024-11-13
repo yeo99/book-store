@@ -1,8 +1,9 @@
 import Home from './Pages/Home'
+import Layout from './components/layout/layout';
 
 function App() {
   return (
-    <Home></Home>
+    <Layout children={<Home/>}/>
   );
 }
 
