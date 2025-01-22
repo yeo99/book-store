@@ -1,5 +1,10 @@
 function Footer() {
-    return <div>copyright(c), 2024, book store.</div>
+    return (
+        <>
+            <hr/>
+            <footer>copyright(c), 2024, book store.</footer>
+        </>
+    )
 }
 
 export default Footer;
