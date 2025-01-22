@@ -9,10 +9,12 @@ function Header() {
 }
 
 const HeaderStyle = styled.header`
-    background-color: #333;
+    /* 구조분해할당 */
+    /* background-color: ${(props) => props.theme.color.background}; */
+    background-color: ${({theme}) => theme.color.background};
 
     h1 {
-        color: white;
+        color: ${({theme}) => theme.color.primary}
     }
 `
 
